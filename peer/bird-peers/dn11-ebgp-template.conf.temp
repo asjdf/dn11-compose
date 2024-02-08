@@ -1,0 +1,3 @@
+protocol bgp hakuya_tokyo_aws from dn11_ebgp_peers {
+    neighbor 100.64.0.253 % 'hakuya-aws' as 4220081919;
+}
