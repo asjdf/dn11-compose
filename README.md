@@ -68,7 +68,7 @@ We recommend to use [docker-compose v2](https://docs.docker.com/compose/cli-comm
 
     ```yml
         networks:
-          dn42-net:
+          dn11-net:
               ipv4_address: "<dn11 ip address allocated this service>"
               ipv6_address: "<dn11 ip address allocated this service>"
     ```
@@ -79,8 +79,8 @@ We recommend to use [docker-compose v2](https://docs.docker.com/compose/cli-comm
 
     ```yml
         environment:
-          - DN42_GATEWAY_V4=<ipv4 address of your bgp container>
-          - DN42_GATEWAY_V6=<ipv6 address of your bgp container>
+          - DN11_GATEWAY_V4=<ipv4 address of your bgp container>
+          - DN11_GATEWAY_V6=<ipv6 address of your bgp container>
     ```
 
 ## peer
