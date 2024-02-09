@@ -1,0 +1,4 @@
+peer/wg-peers/*.conf
+peer/bird/include/*.conf
+peer/bird/variable.conf
+/docker-compose.yml

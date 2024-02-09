@@ -1,5 +1,13 @@
 # DN11-Compose
 
+## Tool
+
+- Prepare privKey and pubKey for WireGuard
+
+  ```sh
+  wg genkey | tee /dev/tty | wg pubkey
+  ```
+
 ## Setup
 
 We recommend to use [docker-compose v2](https://docs.docker.com/compose/cli-command/#install-on-linux) to setup containers. 
