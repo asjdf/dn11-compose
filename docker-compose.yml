@@ -18,10 +18,10 @@ services:
             - "net.ipv4.conf.default.rp_filter=0"
         networks:
             dn42-net:
-                ipv4_address: <dn42 ipv4 address assigned to this service>
-                ipv6_address: <dn42 ipv6 address assigned to this service>
+                ipv4_address: <dn11 ipv4 address assigned to this service>
+                ipv6_address: <dn11 ipv6 address assigned to this service>
         ports:
-            - "21742:21742/udp" # imlk
+            - "12345:12345/udp" # export for peer（wireguard）
         restart: always
 
 networks:
@@ -33,5 +33,5 @@ networks:
         ipam:
             driver: default
             config:
-                - subnet: <your dn42 ipv4 subnet>
-                - subnet: <your dn42 ipv6 subnet>
+                - subnet: <your dn11 ipv4 subnet>
+                - subnet: <your dn11 ipv6 subnet>
