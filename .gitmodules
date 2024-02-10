@@ -1,0 +1,3 @@
+[submodule "generator/wg/keygenjs"]
+	path = generator/wg/keygenjs
+	url = https://github.com/jcarrano/wg-keygen-notrust.git

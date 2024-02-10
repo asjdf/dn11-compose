@@ -1,0 +1,15 @@
+[Interface]
+PrivateKey = {{.OwnPrivateKey}}
+ListenPort = {{.OwnListenPort}}
+Table = off # 不要自动添加路由
+# 如果使用IPV4-DN11 + IPV6-DN11：
+PostUp = /sbin/ip addr add dev %i {{.OwnIPAtPeer}}/32 peer {{.PeerIP}}/32
+# PostUp = /sbin/ip addr add dev %i <LocalIPv6>/128 peer <PeerIPv6>/128
+# 如果使用IPV6-link-local：
+# PostUp = /sbin/ip addr add fe80::1742/64 dev %i
+
+[Peer]
+Endpoint = {{.PeerEndPoint}}
+PublicKey = {{.PeerPublicKey}}
+AllowedIPs = 0.0.0.0/0, ::/0
+# PersistentKeepalive = 10
