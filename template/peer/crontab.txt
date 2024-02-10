@@ -1,0 +1,1 @@
+*/15 * * * * find /etc/wireguard/ -type f -name '*.conf' -exec /usr/local/bin/wg-reresolve-dns.sh {} \;

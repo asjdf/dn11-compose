@@ -1,0 +1,3 @@
+protocol bgp {{.PeerAlias}} from dn11_ebgp_peers {
+    neighbor {{.PeerIP}} % '{{.PeerAlias}}' as {{.PeerAS}};
+}
