@@ -1,7 +1,7 @@
 [Interface]
 PrivateKey = <Your wireguard private-key>
 ListenPort = 12345
-Table = off # 不要自动添加路由
+Table = off # 不要自动添加路由 重要！请勿在不明白原理之前改动该条配置 否则容易造成断网事故
 # 如果使用IPV4-DN11 + IPV6-DN11：
 # PostUp = /sbin/ip addr add dev %i <LocalIPv4>/32 peer <PeerIPv4>/32
 # PostUp = /sbin/ip addr add dev %i <LocalIPv6>/128 peer <PeerIPv6>/128

@@ -1,0 +1,3 @@
+protocol bgp IBGP_dorm from dn11_ibgp_peers {
+    neighbor 172.16.4.5 internal;
+}

@@ -1,0 +1,3 @@
+protocol bgp atom116 from dn11_ebgp_peers {
+    neighbor 10.28.0.171 % 'atom116' as 4220082866;
+}

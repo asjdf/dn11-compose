@@ -4,8 +4,8 @@ services:
     peer:
         build: ./peer
         volumes:
-            - ./peer/bird/:/etc/bird/:rw
-            - ./peer/wg-peers/:/etc/wireguard/:rw
+            - ./peer/conf/bird/:/etc/bird/:rw
+            - ./peer/conf/wg/:/etc/wireguard/:rw
         cap_add:
             - NET_ADMIN
         sysctls:
